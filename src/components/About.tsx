@@ -73,10 +73,10 @@ const About = () => {
 
               {/* Mission Statement */}
               <div className="bg-gradient-warm p-6 rounded-lg border border-primary/20 shadow-soft">
-                <h4 className="text-xl font-semibold text-accent mb-3 font-serif">
+                <h4 className="text-xl font-semibold text-foreground mb-3 font-serif">
                   Nossa Missão
                 </h4>
-                <p className="text-accent-foreground italic leading-relaxed">
+                <p className="text-foreground/90 italic leading-relaxed">
                   "Ser um ponto de encontro entre tradição e modernidade, oferecendo produtos 
                   e serviços que fortalecem a fé e nutrem o espírito de cada pessoa que nos visita."
                 </p>

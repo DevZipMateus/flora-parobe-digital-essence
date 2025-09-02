@@ -115,7 +115,7 @@ const Contact = () => {
 
               {/* Social Media */}
               <div className="bg-gradient-warm p-6 rounded-lg border border-primary/20 shadow-soft">
-                <h4 className="text-xl font-semibold text-accent mb-4 font-serif">
+                <h4 className="text-xl font-semibold text-foreground mb-4 font-serif">
                   Siga-nos nas Redes Sociais
                 </h4>
                 <div className="flex gap-4">
@@ -125,14 +125,14 @@ const Contact = () => {
                       href={social.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`w-12 h-12 bg-background/20 backdrop-blur-sm rounded-lg flex items-center justify-center text-accent-foreground hover:bg-background/40 transition-all duration-300 group ${social.color}`}
+                      className={`w-12 h-12 bg-background/40 backdrop-blur-sm rounded-lg flex items-center justify-center text-foreground hover:bg-background/60 transition-all duration-300 group border border-white/20 ${social.color}`}
                       title={social.name}
                     >
                       <social.icon className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
                     </a>
                   ))}
                 </div>
-                <p className="text-sm text-accent-foreground mt-3 opacity-90">
+                <p className="text-sm text-foreground/80 mt-3">
                   Acompanhe nossas novidades e dicas espirituais
                 </p>
               </div>

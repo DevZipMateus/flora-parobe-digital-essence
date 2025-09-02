@@ -95,10 +95,10 @@ const Services = () => {
           {/* Products Section */}
           <div className="bg-gradient-warm rounded-2xl p-8 lg:p-12 shadow-elegant">
             <div className="text-center mb-8">
-              <h3 className="text-2xl md:text-3xl font-bold text-accent mb-4 font-serif">
+              <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4 font-serif">
                 Nossos Produtos
               </h3>
-              <p className="text-accent-foreground leading-relaxed">
+              <p className="text-foreground/80 leading-relaxed">
                 Trabalhamos com uma ampla gama de artigos religiosos e espirituais, 
                 todos selecionados com cuidado e qualidade garantida.
               </p>
@@ -106,15 +106,15 @@ const Services = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
               {products.map((product, index) => (
-                <div key={index} className="flex items-center gap-3 bg-background/20 backdrop-blur-sm rounded-lg p-3">
+                <div key={index} className="flex items-center gap-3 bg-background/30 backdrop-blur-sm rounded-lg p-3 border border-white/20">
                   <Star className="w-4 h-4 text-primary fill-primary flex-shrink-0" />
-                  <span className="text-sm text-accent-foreground font-medium">{product}</span>
+                  <span className="text-sm text-foreground font-medium">{product}</span>
                 </div>
               ))}
             </div>
 
             <div className="text-center">
-              <p className="text-accent-foreground mb-6 italic">
+              <p className="text-foreground/90 mb-6 italic">
                 "Cada produto é escolhido com carinho para atender suas necessidades espirituais"
               </p>
               <Button 
