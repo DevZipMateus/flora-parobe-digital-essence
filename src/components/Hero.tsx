@@ -48,7 +48,7 @@ const Hero = () => {
           </div>
 
           {/* Main heading with better contrast */}
-          <div className="bg-background/80 backdrop-blur-md rounded-2xl p-8 mb-8 shadow-elegant animate-fade-in delay-200">
+          <div className="bg-background/40 backdrop-blur-md rounded-2xl p-8 mb-8 shadow-elegant animate-fade-in delay-200 border border-white/10">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-primary mb-6 font-serif">
               FLORA PAROBÉ
             </h1>
@@ -85,7 +85,7 @@ const Hero = () => {
               <Button 
                 variant="outline"
                 size="lg"
-                className="border-primary bg-background/50 text-primary hover:bg-primary hover:text-primary-foreground font-semibold px-8 py-6 text-lg transition-all duration-300 backdrop-blur-sm"
+                className="border-primary bg-background/30 text-primary hover:bg-primary hover:text-primary-foreground font-semibold px-8 py-6 text-lg transition-all duration-300 backdrop-blur-sm"
                 onClick={() => scrollToSection("servicos")}
               >
                 Conheça Nossos Serviços
