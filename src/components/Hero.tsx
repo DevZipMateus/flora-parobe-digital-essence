@@ -49,23 +49,23 @@ const Hero = () => {
 
           {/* Main heading with better contrast */}
           <div className="bg-background/40 backdrop-blur-md rounded-2xl p-8 mb-8 shadow-elegant animate-fade-in delay-200 border border-white/10">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-primary mb-6 font-serif">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 font-serif">
               FLORA PAROBÉ
             </h1>
 
             {/* Slogan */}
-            <p className="text-xl md:text-2xl text-accent font-medium mb-6">
+            <p className="text-xl md:text-2xl text-white/90 font-medium mb-6">
               Tradição, fé e energia em cada detalhe
             </p>
 
             {/* Description */}
             <div className="max-w-3xl mx-auto mb-8">
-              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-6">
-                A Flora Parobé nasceu com o propósito de levar <strong className="text-primary">espiritualidade</strong>, 
-                <strong className="text-primary"> tradição</strong> e <strong className="text-primary">acolhimento</strong> para 
+              <p className="text-lg md:text-xl text-white/80 leading-relaxed mb-6">
+                A Flora Parobé nasceu com o propósito de levar <strong className="text-white">espiritualidade</strong>, 
+                <strong className="text-white"> tradição</strong> e <strong className="text-white">acolhimento</strong> para 
                 todos que buscam artigos religiosos de qualidade.
               </p>
-              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+              <p className="text-base md:text-lg text-white/80 leading-relaxed">
                 Localizada no coração de Porto Alegre, nossa loja é um espaço de fé e respeito, 
                 onde cada detalhe é pensado para atender com carinho e dedicação.
               </p>
@@ -85,7 +85,7 @@ const Hero = () => {
               <Button 
                 variant="outline"
                 size="lg"
-                className="border-primary bg-background/30 text-primary hover:bg-primary hover:text-primary-foreground font-semibold px-8 py-6 text-lg transition-all duration-300 backdrop-blur-sm"
+                className="border-white/60 bg-white/10 text-white hover:bg-white hover:text-black font-semibold px-8 py-6 text-lg transition-all duration-300 backdrop-blur-sm"
                 onClick={() => scrollToSection("servicos")}
               >
                 Conheça Nossos Serviços
@@ -97,10 +97,10 @@ const Hero = () => {
           <div className="animate-fade-in delay-700">
             <button 
               onClick={() => scrollToSection("sobre")}
-              className="group flex flex-col items-center gap-2 text-foreground bg-background/80 backdrop-blur-sm px-4 py-3 rounded-full hover:bg-background/90 transition-all shadow-soft"
+              className="group flex flex-col items-center gap-2 text-white bg-black/20 backdrop-blur-sm px-4 py-3 rounded-full hover:bg-black/40 transition-all shadow-soft"
             >
               <span className="text-sm font-medium">Saiba mais</span>
-              <ArrowDown className="w-5 h-5 animate-bounce group-hover:text-primary transition-colors" />
+              <ArrowDown className="w-5 h-5 animate-bounce group-hover:text-white transition-colors" />
             </button>
           </div>
         </div>
