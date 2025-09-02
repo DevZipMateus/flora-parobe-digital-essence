@@ -19,9 +19,9 @@ All colors MUST be HSL.
     --popover-foreground: 35 25% 15%;
 
     /* Golden primary color inspired by the logo */
-    --primary: 45 85% 45%;
+    --primary: 45 95% 50%;
     --primary-foreground: 45 60% 97%;
-    --primary-glow: 45 90% 55%;
+    --primary-glow: 45 100% 60%;
 
     /* Soft golden secondary */
     --secondary: 45 40% 88%;
@@ -41,7 +41,7 @@ All colors MUST be HSL.
 
     --border: 45 25% 85%;
     --input: 45 25% 85%;
-    --ring: 45 85% 45%;
+    --ring: 45 95% 50%;
 
     --radius: 0.75rem;
 
