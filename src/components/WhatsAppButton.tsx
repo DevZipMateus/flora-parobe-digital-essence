@@ -62,17 +62,11 @@ const WhatsAppButton = () => {
           className="w-8 h-8 group-hover:scale-110 transition-transform duration-300"
         />
         
-        {/* Pulse animation */}
-        <div className="absolute inset-0 rounded-full bg-[#25D366] opacity-75 animate-ping"></div>
-        
         {/* Notification badge */}
         <div className="absolute -top-1 -right-1 w-5 h-5 bg-red-500 text-white text-xs rounded-full flex items-center justify-center font-bold animate-pulse">
           1
         </div>
       </button>
-
-      {/* Background pulse effect */}
-      <div className="absolute inset-0 rounded-full bg-[#25D366] opacity-20 animate-pulse scale-125 pointer-events-none"></div>
     </div>
   );
 };
