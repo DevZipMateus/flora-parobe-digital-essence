@@ -8,7 +8,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 20);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -23,10 +23,18 @@ const Header = () => {
   };
 
   return (
-    <>
+    <header 
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled 
+          ? "bg-background/95 backdrop-blur-md shadow-elegant" 
+          : "bg-background/90 backdrop-blur-sm"
+      }`}
+    >
       {/* Top Bar */}
-      <div className="bg-primary text-primary-foreground py-2 px-4">
-        <div className="container mx-auto">
+      <div className={`bg-primary text-primary-foreground transition-all duration-300 ${
+        isScrolled ? 'py-1' : 'py-2'
+      }`}>
+        <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row md:justify-between md:items-center text-sm">
             <div className="flex flex-col md:flex-row md:gap-6 gap-1">
               <div className="flex items-center gap-2">
@@ -42,7 +50,9 @@ const Header = () => {
                 <span>Praça Pereira Parobé, 64 - Porto Alegre/RS</span>
               </div>
             </div>
-            <div className="text-xs md:text-sm mt-1 md:mt-0">
+            <div className={`text-xs md:text-sm mt-1 md:mt-0 transition-opacity duration-300 ${
+              isScrolled ? 'opacity-0 md:opacity-100' : 'opacity-100'
+            }`}>
               Seg-Sex: 09:00-19:00 | Sáb: 09:00-16:00
             </div>
           </div>
@@ -50,14 +60,8 @@ const Header = () => {
       </div>
 
       {/* Main Header */}
-      <header 
-        className={`fixed top-12 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled 
-            ? "bg-background/95 backdrop-blur-md shadow-elegant" 
-            : "bg-transparent"
-        }`}
-      >
-        <nav className="container mx-auto px-4 py-4">
+      <nav className="bg-inherit border-b border-primary/10">
+        <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div 
@@ -167,9 +171,9 @@ const Header = () => {
               </div>
             </div>
           )}
-        </nav>
-      </header>
-    </>
+        </div>
+      </nav>
+    </header>
   );
 };
 
