@@ -18,7 +18,7 @@ const NotFound = () => {
       <div className="text-center max-w-2xl mx-auto px-4">
         <div className="mb-8">
           <img 
-            src="/lovable-uploads/cd58b33b-1a21-48fb-a735-002bc8846cba.png" 
+            src="/lovable-uploads/d0384803-4960-43b4-969b-f05978cfc3e8.png" 
             alt="Flora Parobé"
             className="w-20 h-20 mx-auto mb-6 opacity-60"
           />

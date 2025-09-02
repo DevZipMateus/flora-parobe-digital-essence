@@ -31,7 +31,7 @@ const Hero = () => {
           {/* Logo */}
           <div className="mb-8 animate-fade-in">
             <img 
-              src="/lovable-uploads/cd58b33b-1a21-48fb-a735-002bc8846cba.png" 
+              src="/lovable-uploads/d0384803-4960-43b4-969b-f05978cfc3e8.png" 
               alt="Flora Parobé - Artigos Religiosos e Espiritualidade"
               className="w-32 h-32 mx-auto mb-6 drop-shadow-glow"
             />
