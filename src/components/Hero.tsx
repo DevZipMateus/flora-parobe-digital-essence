@@ -18,9 +18,8 @@ const Hero = () => {
           alt="Fachada da loja Flora Parobé"
           className="w-full h-full object-cover"
         />
-        {/* Overlay for better text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background/90"></div>
-        <div className="absolute inset-0 bg-primary/20"></div>
+        {/* Overlay for better text readability - removed yellow tint */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/50"></div>
       </div>
       
       {/* Decorative elements */}
