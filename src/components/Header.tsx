@@ -113,7 +113,12 @@ const Header = () => {
                 asChild
                 className="bg-primary hover:bg-primary-glow text-primary-foreground font-medium px-6 shadow-soft"
               >
-                <a href="https://wa.me/5551984307593" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/5551984307593" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                  <img 
+                    src="/lovable-uploads/43a844dc-ff05-4541-8844-254d6e71d785.png" 
+                    alt="WhatsApp"
+                    className="w-5 h-5"
+                  />
                   WhatsApp
                 </a>
               </Button>
@@ -163,7 +168,12 @@ const Header = () => {
                     asChild
                     className="w-full bg-primary hover:bg-primary-glow text-primary-foreground font-medium"
                   >
-                    <a href="https://wa.me/5551984307593" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/5551984307593" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                      <img 
+                        src="/lovable-uploads/43a844dc-ff05-4541-8844-254d6e71d785.png" 
+                        alt="WhatsApp"
+                        className="w-5 h-5"
+                      />
                       WhatsApp
                     </a>
                   </Button>
