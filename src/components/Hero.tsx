@@ -93,16 +93,6 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Scroll indicator */}
-          <div className="animate-fade-in delay-700">
-            <button 
-              onClick={() => scrollToSection("sobre")}
-              className="group flex flex-col items-center gap-2 text-white bg-black/20 backdrop-blur-sm px-4 py-3 rounded-full hover:bg-black/40 transition-all shadow-soft"
-            >
-              <span className="text-sm font-medium">Saiba mais</span>
-              <ArrowDown className="w-5 h-5 animate-bounce group-hover:text-white transition-colors" />
-            </button>
-          </div>
         </div>
       </div>
 
