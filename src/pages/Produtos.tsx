@@ -1,4 +1,7 @@
 import { useState } from "react";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Produtos = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -36,49 +39,54 @@ const Produtos = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold text-center text-foreground mb-12">Produtos</h1>
-        
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {images.map((image, index) => (
-            <div 
-              key={index}
-              className="aspect-square cursor-pointer overflow-hidden rounded-lg border border-border hover:shadow-lg transition-all duration-300"
-              onClick={() => setSelectedImage(image)}
-            >
-              <img 
-                src={image} 
-                alt={`Produto ${index + 1}`}
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                loading="lazy"
-              />
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Modal para visualizar imagem ampliada */}
-      {selectedImage && (
-        <div 
-          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4"
-          onClick={() => setSelectedImage(null)}
-        >
-          <div className="relative max-w-4xl max-h-full">
-            <img 
-              src={selectedImage} 
-              alt="Produto ampliado"
-              className="max-w-full max-h-full object-contain rounded-lg"
-            />
-            <button
-              onClick={() => setSelectedImage(null)}
-              className="absolute top-4 right-4 text-white bg-black/50 rounded-full w-8 h-8 flex items-center justify-center hover:bg-black/70 transition-colors"
-            >
-              ×
-            </button>
+    <div className="min-h-screen">
+      <Header />
+      <main className="pt-32">
+        <div className="container mx-auto px-4 py-16">
+          <h1 className="text-4xl font-bold text-center text-foreground mb-12">Produtos</h1>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {images.map((image, index) => (
+              <div 
+                key={index}
+                className="aspect-square cursor-pointer overflow-hidden rounded-lg border border-border hover:shadow-lg transition-all duration-300"
+                onClick={() => setSelectedImage(image)}
+              >
+                <img 
+                  src={image} 
+                  alt={`Produto ${index + 1}`}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
+                />
+              </div>
+            ))}
           </div>
         </div>
-      )}
+
+        {/* Modal para visualizar imagem ampliada */}
+        {selectedImage && (
+          <div 
+            className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4"
+            onClick={() => setSelectedImage(null)}
+          >
+            <div className="relative max-w-4xl max-h-full">
+              <img 
+                src={selectedImage} 
+                alt="Produto ampliado"
+                className="max-w-full max-h-full object-contain rounded-lg"
+              />
+              <button
+                onClick={() => setSelectedImage(null)}
+                className="absolute top-4 right-4 text-white bg-black/50 rounded-full w-8 h-8 flex items-center justify-center hover:bg-black/70 transition-colors"
+              >
+                ×
+              </button>
+            </div>
+          </div>
+        )}
+      </main>
+      <Footer />
+      <WhatsAppButton />
     </div>
   );
 };
