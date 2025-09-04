@@ -53,13 +53,13 @@ const Produtos = () => {
                 className="border border-border rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 bg-card"
               >
                 <div 
-                  className="aspect-square cursor-pointer overflow-hidden bg-muted/20 flex items-center justify-center"
+                  className="cursor-pointer overflow-hidden bg-muted/20 flex items-center justify-center min-h-[200px]"
                   onClick={() => setSelectedImage(image)}
                 >
                   <img 
                     src={image} 
                     alt={`Produto ${index + 1}`}
-                    className="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
+                    className="w-full h-auto object-contain hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                   />
                 </div>
