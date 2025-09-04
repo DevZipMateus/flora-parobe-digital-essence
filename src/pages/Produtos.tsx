@@ -2,6 +2,7 @@ import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { Button } from "@/components/ui/button";
 
 const Produtos = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -49,15 +50,39 @@ const Produtos = () => {
             {images.map((image, index) => (
               <div 
                 key={index}
-                className="aspect-square cursor-pointer overflow-hidden rounded-lg border border-border hover:shadow-lg transition-all duration-300"
-                onClick={() => setSelectedImage(image)}
+                className="border border-border rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 bg-card"
               >
-                <img 
-                  src={image} 
-                  alt={`Produto ${index + 1}`}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  loading="lazy"
-                />
+                <div 
+                  className="aspect-square cursor-pointer overflow-hidden"
+                  onClick={() => setSelectedImage(image)}
+                >
+                  <img 
+                    src={image} 
+                    alt={`Produto ${index + 1}`}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="p-4">
+                  <Button 
+                    asChild
+                    className="w-full bg-primary hover:bg-primary-glow text-primary-foreground font-medium"
+                  >
+                    <a 
+                      href="https://wa.me/5551984307593" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="flex items-center gap-2 justify-center"
+                    >
+                      <img 
+                        src="/lovable-uploads/43a844dc-ff05-4541-8844-254d6e71d785.png" 
+                        alt="WhatsApp"
+                        className="w-4 h-4"
+                      />
+                      Saiba mais
+                    </a>
+                  </Button>
+                </div>
               </div>
             ))}
           </div>
