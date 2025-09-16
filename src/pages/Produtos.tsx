@@ -69,7 +69,7 @@ const Produtos = () => {
                     className="w-full bg-primary hover:bg-primary-glow text-primary-foreground font-medium"
                   >
                     <a 
-                      href="https://wa.me/5551984307593" 
+                      href="https://wa.me/5199889444" 
                       target="_blank" 
                       rel="noopener noreferrer" 
                       className="flex items-center gap-2 justify-center"

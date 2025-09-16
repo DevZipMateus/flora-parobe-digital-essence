@@ -68,7 +68,7 @@ const NotFound = () => {
             variant="secondary"
             className="bg-background/20 text-accent-foreground hover:bg-background/40"
           >
-            <a href="https://wa.me/5551984307593" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+            <a href="https://wa.me/5199889444" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
               <img 
                 src="/lovable-uploads/43a844dc-ff05-4541-8844-254d6e71d785.png" 
                 alt="WhatsApp"

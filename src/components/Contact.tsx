@@ -7,15 +7,15 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Telefone",
-      info: "(51) 98430-7593",
-      link: "tel:5551984307593",
+      info: "(51) 99889-444",
+      link: "tel:5199889444",
       description: "Ligue para nós"
     },
     {
       icon: Mail,
       title: "E-mail",
-      info: "fabiano.grabinski@gmail.com",
-      link: "mailto:fabiano.grabinski@gmail.com",
+      info: "floraparobe@gmail.com",
+      link: "mailto:floraparobe@gmail.com",
       description: "Envie um e-mail"
     },
     {
@@ -144,7 +144,7 @@ const Contact = () => {
                   size="lg"
                   className="bg-primary hover:bg-primary-glow text-primary-foreground font-semibold px-8 py-6 text-lg shadow-elegant hover:shadow-glow transition-all duration-300"
                 >
-                  <a href="https://wa.me/5551984307593" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3">
+                  <a href="https://wa.me/5199889444" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3">
                     <img 
                       src="/lovable-uploads/43a844dc-ff05-4541-8844-254d6e71d785.png" 
                       alt="WhatsApp"

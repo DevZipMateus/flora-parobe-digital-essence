@@ -18,7 +18,7 @@ const WhatsAppButton = () => {
     const message = encodeURIComponent(
       "Olá! Vim através do site da Flora Parobé e gostaria de saber mais sobre os artigos religiosos disponíveis."
     );
-    window.open(`https://wa.me/5551984307593?text=${message}`, "_blank", "noopener,noreferrer");
+    window.open(`https://wa.me/5199889444?text=${message}`, "_blank", "noopener,noreferrer");
   };
 
   if (!isVisible) return null;

@@ -59,7 +59,7 @@ const Header = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-3 h-3" />
-                <span>fabiano.grabinski@gmail.com</span>
+                <span>floraparobe@gmail.com</span>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="w-3 h-3" />
@@ -135,7 +135,7 @@ const Header = () => {
                 asChild
                 className="bg-primary hover:bg-primary-glow text-primary-foreground font-medium px-6 shadow-soft"
               >
-                <a href="https://wa.me/5551984307593" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                <a href="https://wa.me/5199889444" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                   <img 
                     src="/lovable-uploads/43a844dc-ff05-4541-8844-254d6e71d785.png" 
                     alt="WhatsApp"
@@ -197,7 +197,7 @@ const Header = () => {
                     asChild
                     className="w-full bg-primary hover:bg-primary-glow text-primary-foreground font-medium"
                   >
-                    <a href="https://wa.me/5551984307593" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                    <a href="https://wa.me/5199889444" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                       <img 
                         src="/lovable-uploads/43a844dc-ff05-4541-8844-254d6e71d785.png" 
                         alt="WhatsApp"
